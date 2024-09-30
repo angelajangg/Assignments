@@ -1,0 +1,135 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes up full height */
+    font-family: 'Helvetica', sans-serif; /* Change font here */
+}
+
+/* Main content */
+main {
+    flex-grow: 1; /* This will allow the main content to grow and take up the available space */
+    padding: 20px;
+    margin-bottom: 60px; /* Adjust this margin to the height of your footer */
+}
+
+/* Footer styling */
+footer {
+    background-color: #27293f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* fixed footer */
+    bottom: 0;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #27293f;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+
+/* Ensure that main content has enough space at the bottom to prevent overlap */
+main {
+    padding-bottom: 400px; /* Adjust according to the footer's height */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    margin-top: 80px;  /* Increased margin for header height */
+    padding-bottom: 60px;  /* Ensure footer space */
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffd900; /* More visible hover color */
+}
+
+/* Buttons */
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+.centered-text {
+    text-align: center; /* Centers the text horizontally */
+    margin: 0 auto; /* auto margins on the left and right */
+    max-width: 800px; /* limits the width for better readability */
+}
+
+.centered-button {
+    text-align: center; /* Centers the button horizontally */
+    margin: 20px 0; /* add some spacing above and below */
+}
+
+.cta-button {
+    display: inline-block; /* Ensures the button respects the text alignment */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #4CAF50; /* Your button color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+}
+
+.cta-button:hover {
+    background-color: #45a049; /* Change color on hover */
+}
+
+/* Form Inputs */
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Larger for better readability on mobile */
+    }
+}
